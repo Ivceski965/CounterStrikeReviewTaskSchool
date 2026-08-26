@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Site Map — SCS Game Reviews</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    .page-hero { background: var(--surface); border-bottom: 1px solid var(--border); padding: 48px 24px 40px; }
+    .page-hero .container { display:flex; align-items:center; gap:24px; }
+    .page-number { font-family:'Barlow Condensed',sans-serif; font-weight:900; font-size:80px; color:rgba(240,165,0,0.08); line-height:1; }
+
+    .sitemap-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; padding: 56px 0; }
+    .sitemap-section { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; }
+    .sitemap-section h3 {
+      font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 18px;
+      text-transform: uppercase; letter-spacing: 2px; color: var(--accent); margin-bottom: 16px;
+      padding-bottom: 10px; border-bottom: 1px solid var(--border);
+    }
+    .sitemap-section ul { list-style: none; }
+    .sitemap-section li { margin-bottom: 10px; }
+    .sitemap-section a {
+      font-size: 14px; color: var(--text); text-decoration: none;
+      display: flex; align-items: center; gap: 8px; transition: color 0.2s;
+    }
+    .sitemap-section a:hover { color: var(--accent); }
+    .sitemap-section a::before { content: '→'; color: var(--muted); font-size:12px; }
+    .sitemap-section .sub-item a { color: var(--muted); font-size: 13px; padding-left: 16px; }
+    .sitemap-section .sub-item a::before { content: '·'; }
+
+    /* Visual tree diagram */
+    .tree-diagram { padding: 0 0 56px; }
+    .tree-diagram svg { width:100%; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <svg class="logo-icon" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
+        <rect width="44" height="44" rx="4" fill="#111419"/>
+        <polygon points="22,6 38,14 38,30 22,38 6,30 6,14" fill="none" stroke="#f0a500" stroke-width="2"/>
+        <text x="22" y="26" text-anchor="middle" font-family="Barlow Condensed,sans-serif" font-weight="900" font-size="14" fill="#f0a500">SCS</text>
+      </svg>
+      <div class="logo-text">
+        <span class="logo-title">SCS Reviews</span>
+        <span class="logo-sub">Game &amp; Movie</span>
+      </div>
+    </a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html">Photo Gallery</a>
+      <a href="sitemap.html" class="active">Site Map</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="page-number">05</div>
+    <div>
+      <span class="tag">Navigation</span>
+      <h1 class="section-title" style="margin-top:10px;">Site <span>Map</span></h1>
+      <p style="color:var(--muted);font-size:15px;">A complete overview of all pages on the SCS Game Reviews website.</p>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+
+  <!-- Visual tree -->
+  <div class="tree-diagram" style="padding-top:48px;">
+    <svg viewBox="0 0 1000 260" xmlns="http://www.w3.org/2000/svg">
+      <!-- Root -->
+      <rect x="400" y="10" width="200" height="50" rx="4" fill="#111419" stroke="#f0a500" stroke-width="2"/>
+      <text x="500" y="40" text-anchor="middle" font-family="Barlow Condensed,sans-serif" font-size="16" fill="#f0a500" font-weight="700" letter-spacing="2">SCS REVIEWS</text>
+
+      <!-- Branch lines from root -->
+      <line x1="500" y1="60" x2="500" y2="90" stroke="#252c36" stroke-width="2"/>
+      <line x1="100" y1="90" x2="900" y2="90" stroke="#252c36" stroke-width="2"/>
+
+      <!-- Branches down -->
+      <line x1="100" y1="90" x2="100" y2="120" stroke="#252c36" stroke-width="2"/>
+      <line x1="300" y1="90" x2="300" y2="120" stroke="#252c36" stroke-width="2"/>
+      <line x1="500" y1="90" x2="500" y2="120" stroke="#252c36" stroke-width="2"/>
+      <line x1="700" y1="90" x2="700" y2="120" stroke="#252c36" stroke-width="2"/>
+      <line x1="900" y1="90" x2="900" y2="120" stroke="#252c36" stroke-width="2"/>
+
+      <!-- Page nodes -->
+      <!-- Home -->
+      <rect x="20" y="120" width="160" height="44" rx="3" fill="#181d24" stroke="#252c36" stroke-width="1"/>
+      <text x="100" y="147" text-anchor="middle" font-family="Barlow Condensed,sans-serif" font-size="14" fill="#d8dde6" letter-spacing="1">HOME</text>
+
+      <!-- Contact -->
+      <rect x="220" y="120" width="160" height="44" rx="3" fill="#181d24" stroke="#252c36" stroke-width="1"/>
+      <text x="300" y="147" text-anchor="middle" font-family="Barlow Condensed,sans-serif" font-size="14" fill="#d8dde6" letter-spacing="1">CONTACT US</text>
+
+      <!-- Services -->
+      <rect x="420" y="120" width="160" height="44" rx="3" fill="#181d24" stroke="#252c36" stroke-width="1"/>
+      <text x="500" y="147" text-anchor="middle" font-family="Barlow Condensed,sans-serif" font-size="14" fill="#d8dde6" letter-spacing="1">SERVICES</text>
+
+      <!-- Gallery -->
+      <rect x="620" y="120" width="160" height="44" rx="3" fill="#181d24" stroke="#252c36" stroke-width="1"/>
+      <text x="700" y="147" text-anchor="middle" font-family="Barlow Condensed,sans-serif" font-size="14" fill="#d8dde6" letter-spacing="1">PHOTO GALLERY</text>
+
+      <!-- Sitemap -->
+      <rect x="820" y="120" width="160" height="44" rx="3" fill="#111419" stroke="#f0a500" stroke-width="1.5"/>
+      <text x="900" y="147" text-anchor="middle" font-family="Barlow Condensed,sans-serif" font-size="14" fill="#f0a500" letter-spacing="1">SITE MAP</text>
+
+      <!-- Sub-pages lines from Home -->
+      <line x1="100" y1="164" x2="100" y2="185" stroke="#1e2530" stroke-width="1.5" stroke-dasharray="4 2"/>
+      <!-- Sub-nodes -->
+      <rect x="20" y="185" width="160" height="36" rx="2" fill="#0f1318" stroke="#1e2530" stroke-width="1"/>
+      <text x="100" y="208" text-anchor="middle" font-family="monospace" font-size="11" fill="#7a8494">CS2 Review</text>
+
+      <!-- Sub from services -->
+      <line x1="480" y1="164" x2="480" y2="185" stroke="#1e2530" stroke-width="1.5" stroke-dasharray="4 2"/>
+      <line x1="520" y1="164" x2="520" y2="185" stroke="#1e2530" stroke-width="1.5" stroke-dasharray="4 2"/>
+      <rect x="420" y="185" width="78" height="36" rx="2" fill="#0f1318" stroke="#1e2530" stroke-width="1"/>
+      <text x="459" y="208" text-anchor="middle" font-family="monospace" font-size="10" fill="#7a8494">Plans</text>
+      <rect x="502" y="185" width="78" height="36" rx="2" fill="#0f1318" stroke="#1e2530" stroke-width="1"/>
+      <text x="541" y="208" text-anchor="middle" font-family="monospace" font-size="10" fill="#7a8494">Advertising</text>
+
+      <!-- Sub from gallery -->
+      <line x1="700" y1="164" x2="700" y2="185" stroke="#1e2530" stroke-width="1.5" stroke-dasharray="4 2"/>
+      <rect x="620" y="185" width="160" height="36" rx="2" fill="#0f1318" stroke="#1e2530" stroke-width="1"/>
+      <text x="700" y="208" text-anchor="middle" font-family="monospace" font-size="11" fill="#7a8494">CS2 Screenshots</text>
+
+      <!-- File labels -->
+      <text x="100" y="245" text-anchor="middle" font-family="Share Tech Mono,sans-serif" font-size="10" fill="rgba(240,165,0,0.5)">index.html</text>
+      <text x="300" y="245" text-anchor="middle" font-family="Share Tech Mono,sans-serif" font-size="10" fill="rgba(240,165,0,0.5)">contact.html</text>
+      <text x="500" y="245" text-anchor="middle" font-family="Share Tech Mono,sans-serif" font-size="10" fill="rgba(240,165,0,0.5)">services.html</text>
+      <text x="700" y="245" text-anchor="middle" font-family="Share Tech Mono,sans-serif" font-size="10" fill="rgba(240,165,0,0.5)">gallery.html</text>
+      <text x="900" y="245" text-anchor="middle" font-family="Share Tech Mono,sans-serif" font-size="10" fill="rgba(240,165,0,0.5)">sitemap.html</text>
+    </svg>
+  </div>
+
+  <!-- Link Grid -->
+  <div class="sitemap-grid">
+    <div class="sitemap-section">
+      <h3>🏠 Home</h3>
+      <ul>
+        <li><a href="index.html">Home — index.html</a></li>
+        <li class="sub-item"><a href="index.html#overview">Game Overview</a></li>
+        <li class="sub-item"><a href="index.html#gameplay">Gameplay &amp; Mechanics</a></li>
+        <li class="sub-item"><a href="index.html#visuals">Visuals &amp; Audio</a></li>
+        <li class="sub-item"><a href="index.html#verdict">Final Verdict</a></li>
+        <li class="sub-item"><a href="index.html#pros-cons">Pros &amp; Cons</a></li>
+        <li class="sub-item"><a href="index.html#score">Score &amp; Ratings</a></li>
+      </ul>
+    </div>
+
+    <div class="sitemap-section">
+      <h3>📧 Contact Us</h3>
+      <ul>
+        <li><a href="contact.html">Contact — contact.html</a></li>
+        <li class="sub-item"><a href="contact.html#form">Send a Message</a></li>
+        <li class="sub-item"><a href="contact.html#email">Email Details</a></li>
+        <li class="sub-item"><a href="contact.html#phone">Phone &amp; Hours</a></li>
+        <li class="sub-item"><a href="contact.html#address">Office Address</a></li>
+      </ul>
+    </div>
+
+    <div class="sitemap-section">
+      <h3>🎮 Services</h3>
+      <ul>
+        <li><a href="services.html">Services — services.html</a></li>
+        <li class="sub-item"><a href="services.html#game-reviews">Game Reviews</a></li>
+        <li class="sub-item"><a href="services.html#movie-reviews">Movie Reviews</a></li>
+        <li class="sub-item"><a href="services.html#hardware">Hardware Guides</a></li>
+        <li class="sub-item"><a href="services.html#esports">Esports Coverage</a></li>
+        <li class="sub-item"><a href="services.html#plans">Membership Plans</a></li>
+        <li class="sub-item"><a href="services.html#advertising">Advertising</a></li>
+      </ul>
+    </div>
+
+    <div class="sitemap-section">
+      <h3>🖼 Photo Gallery</h3>
+      <ul>
+        <li><a href="gallery.html">Gallery — gallery.html</a></li>
+        <li class="sub-item"><a href="gallery.html#maps">Map Screenshots</a></li>
+        <li class="sub-item"><a href="gallery.html#weapons">Weapon Showcases</a></li>
+        <li class="sub-item"><a href="gallery.html#ui">UI &amp; HUD Images</a></li>
+        <li class="sub-item"><a href="gallery.html#esports">Esports Photos</a></li>
+      </ul>
+    </div>
+
+    <div class="sitemap-section">
+      <h3>🗺 Site Map</h3>
+      <ul>
+        <li><a href="sitemap.html">Site Map — sitemap.html</a></li>
+        <li class="sub-item"><a href="sitemap.html#tree">Visual Tree</a></li>
+        <li class="sub-item"><a href="sitemap.html#links">All Page Links</a></li>
+      </ul>
+    </div>
+
+    <div class="sitemap-section">
+      <h3>ℹ About SCS</h3>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Use</a></li>
+        <li><a href="#">Advertise With Us</a></li>
+        <li><a href="#">RSS Feed</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-motto">Play Hard. Review Harder. Know Before You Buy.</div>
+    <div class="footer-contact">📧 reviews@scsreviews.com.au &nbsp;|&nbsp; 📞 +61 2 9000 1234 &nbsp;|&nbsp; 📍 Level 4, 200 George St, Sydney NSW 2000</div>
+    <div class="footer-copyright">© Copyright 2023–2026 Service &amp; Customer Satisfaction (SCS). All rights reserved.</div>
+  </div>
+</footer>
+</body>
+</html>
